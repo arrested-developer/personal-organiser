@@ -11,8 +11,8 @@
     "dev-client": "cd client && npm start",
     "dev-server": "cd server && npm run dev",
     "dev": "concurrently \"npm:dev-*\" -kill-others",
-    "build": "cd client && npm run build",
-    "heroku-prebuild": "npm run init",
+    "build-client": "cd client && npm run build",
+    "heroku-postbuild": "npm run init && npm run build-client",
     "start": "cd server && npm start"
   },
   "repository": {
