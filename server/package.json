@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
     "test": "tape **/*.test.js | tap-spec",
-    "test-coverage": "nyc npm test"
+    "test-coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov"
   },
   "dependencies": {
     "cookie-parser": "^1.4.3",
