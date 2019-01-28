@@ -6,7 +6,7 @@
   "scripts": {
     "test": "cd client && npm test && cd ../server && npm test",
     "init-client": "cd client && npm i",
-    "init-server": "cd client && npm i",
+    "init-server": "cd server && npm i",
     "init": "concurrently \"npm:init-*\"",
     "dev-client": "cd client && npm start",
     "dev-server": "cd server && npm run dev",
