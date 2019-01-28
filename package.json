@@ -5,9 +5,15 @@
   "main": "./server/app.js",
   "scripts": {
     "test": "cd client && npm test && cd ../server && npm test",
+    "init-client": "cd client && npm i",
+    "init-server": "cd client && npm i",
+    "init": "concurrently \"npm:init-*\"",
     "dev-client": "cd client && npm start",
     "dev-server": "cd server && npm run dev",
-    "dev": "concurrently \"npm:dev-*\" -kill-others"
+    "dev": "concurrently \"npm:dev-*\" -kill-others",
+    "build": "cd client && npm run build",
+    "heroku-prebuild": "npm run init",
+    "start": "cd server && npm start"
   },
   "repository": {
     "type": "git",
