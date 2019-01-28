@@ -5,6 +5,7 @@
   "main": "./server/app.js",
   "scripts": {
     "test": "cd client && npm test && cd ../server && npm test",
+    "test-coverage": "cd client && npm run test-coverage && cd server && npm run test-coverage",
     "init-client": "cd client && npm i",
     "init-server": "cd server && npm i",
     "init": "concurrently \"npm:init-*\"",
