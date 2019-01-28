@@ -1,0 +1,26 @@
+{
+  "name": "personal-organiser",
+  "version": "1.0.0",
+  "description": "A to-do list made with React and Materialize",
+  "main": "./server/app.js",
+  "scripts": {
+    "test": "cd client && npm test && cd ../server && npm test",
+    "dev-client": "cd client && npm start",
+    "dev-server": "cd server && npm run dev",
+    "dev": "concurrently \"npm:dev-*\" -kill-others"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arrested-developer/personal-organiser.git"
+  },
+  "author": "@arrested-developer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arrested-developer/personal-organiser/issues"
+  },
+  "homepage": "https://github.com/arrested-developer/personal-organiser#readme",
+  "devDependencies": {
+    "codecov": "^3.1.0",
+    "concurrently": "^4.1.0"
+  }
+}
