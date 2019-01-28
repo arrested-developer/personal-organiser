@@ -1,0 +1,15 @@
+{
+	"all": true,
+	"check": true,
+	"reporter": ["text-summary", "text", "html", "json"],
+	"lines": 95,
+	"statements": 95,
+	"functions": 95,
+	"branches": 95,
+	"exclude": [
+		"coverage",
+		"bin",
+    "app.js",
+    "**/**/*.test.js"
+	]
+}
