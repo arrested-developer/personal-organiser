@@ -9,7 +9,7 @@ class App extends Component {
     this.state = { message: 'Not set' };
   }
   componentDidMount() {
-    axios.get('/api').then(response => {
+    axios.get('/api/message').then(response => {
       this.setState({ message: response.data });
     });
   }
