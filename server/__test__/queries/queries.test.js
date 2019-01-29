@@ -1,7 +1,7 @@
 const test = require("tape")
 const { Client } = require("pg")
 const { refresh } = require("../../db/dbScripts")
-const getAllTodos = require("./getAllTodos")
+const getAllTodos = require("../../models/queries/getAllTodos")
 const dbConfig = require("../../db/db.config")()
 
 test("db queries :: getAllTodos", async t => {

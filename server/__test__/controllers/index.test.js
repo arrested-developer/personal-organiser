@@ -1,7 +1,7 @@
 const test = require("tape")
 const request = require("supertest")
 
-const router = require("../app.js")
+const router = require("../../app.js")
 
 test("api/message should return 200", t => {
   t.plan(1)

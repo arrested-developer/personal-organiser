@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "NODE_ENV=development nodemon ./bin/www",
-    "test": "NODE_ENV=test tape **/**/*.test.js | tap-spec",
+    "test": "NODE_ENV=test tape __test__/**/*.js | tap-spec",
     "test-coverage": "NODE_ENV=test nyc npm test && nyc report --reporter=text-lcov > coverage.lcov"
   },
   "dependencies": {
