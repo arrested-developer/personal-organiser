@@ -8,10 +8,6 @@ const controllers = require("./controllers/index")
 
 const app = express()
 
-// view engine setup
-// app.set('views', path.join(__dirname, 'views'));
-// app.set('view engine', 'jade');
-
 app.use(logger("dev"))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
@@ -29,6 +25,8 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // catch 404 and forward to error handler
+// note: this won't ever be reached in production as the above setup will redirect
+// all unmatched routes to React
 app.use(function(req, res, next) {
   next(createError(404))
 })
