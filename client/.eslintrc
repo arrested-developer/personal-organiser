@@ -25,8 +25,9 @@
     "react/react-in-jsx-scope": 0,
     "no-invalid-this": 0,
     "babel/no-invalid-this": 0,
-    "no-use-before-define": ["error", { "variables": false }],
     "import/no-commonjs": 0,
-    "import/no-nodejs-modules": 0
+    "import/no-nodejs-modules": 0,
+    "import/no-namespace": 0,
+    "no-console": "warn"
   }
 }
