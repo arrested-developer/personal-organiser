@@ -10,6 +10,7 @@
 		"coverage",
 		"bin",
     "app.js",
-    "**/**/*.test.js"
+    "__test__",
+    "db"
 	]
 }
