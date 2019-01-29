@@ -16,9 +16,9 @@ else if (process.env.NODE_ENV === "production" && !process.env.DATABASE_URL)
   throw new Error("DATABASE_URL must be set in production environment")
 
 const db_url = {
-  development: process.env.DB_URL_DEV,
-  production: process.env.DB_URL,
-  test: process.env.DB_URL_TEST,
+  development: process.env.DATABASE_URL_DEV,
+  production: process.env.DATABASE_URL,
+  test: process.env.DATABASE_URL_TEST,
 }
 
 module.exports = () => {
