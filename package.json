@@ -1,7 +1,7 @@
 {
-  "name": "personal-organiser",
+  "name": "starter-stack",
   "version": "1.0.0",
-  "description": "A to-do list made with React and Materialize",
+  "description": "A project starter kit using Express, Reach and Postgres",
   "main": "./server/app.js",
   "scripts": {
     "test": "cd client && npm test && cd ../server && npm test",
@@ -19,14 +19,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arrested-developer/personal-organiser.git"
+    "url": "git+https://github.com/arrested-developer/starter-stack.git"
   },
   "author": "@arrested-developer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arrested-developer/personal-organiser/issues"
+    "url": "https://github.com/arrested-developer/starter-stack/issues"
   },
-  "homepage": "https://github.com/arrested-developer/personal-organiser#readme",
+  "homepage": "https://github.com/arrested-developer/starter-stack#readme",
   "devDependencies": {
     "codecov": "^3.1.0",
     "concurrently": "^4.1.0"
