@@ -1,6 +1,6 @@
 # starter-stack 🥞
 
-![](https://api.travis-ci.org/arrested-developer/personal-organiser.svg?branch=master)
+![Travis CI](https://api.travis-ci.org/arrested-developer/starter-stack.svg?branch=master) [![codecov](https://codecov.io/gh/arrested-developer/starter-stack/branch/master/graph/badge.svg)](https://codecov.io/gh/arrested-developer/starter-stack)
 
 A blank project, built using:
 
