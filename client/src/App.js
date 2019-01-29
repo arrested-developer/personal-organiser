@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import axios from 'axios';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react"
+import axios from "axios"
+import logo from "./logo.svg"
+import "./App.css"
 
 class App extends Component {
   constructor(props) {
-    super(props);
-    this.state = { message: 'Not set' };
+    super(props)
+    this.state = { message: "Not set" }
   }
   componentDidMount() {
-    axios.get('/api/message').then(response => {
-      this.setState({ message: response.data });
-    });
+    axios.get("/api/message").then(response => {
+      this.setState({ message: response.data })
+    })
   }
   render() {
     return (
@@ -29,8 +29,8 @@ class App extends Component {
           </a>
         </header>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
