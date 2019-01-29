@@ -13,7 +13,7 @@ services:
   - postgresql
 
 before_script:
-  - psql -c 'CREATE DATABASE sgcgo_test;' -U postgres
+  - psql -c 'CREATE DATABASE per_org_test;' -U postgres
 
 script:
   - npm run test-coverage
