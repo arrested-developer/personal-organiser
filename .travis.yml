@@ -9,6 +9,10 @@ install:
   - npm install
   - npm run init
 
+env:
+  - NODE_ENV=test
+  - DB_URL_TEST=postgres://postgres@localhost:5432/per_org_test
+
 services:
   - postgresql
 
